@@ -1,0 +1,18 @@
+jQuery Effect.
+Transfers the outline of an element to another element with spectrum effect.
+
+Requirements:
+  jQuery library & jQuery UI library
+
+Usage:
+  $('#src').effect('spectrum', {dest: $('#dest')}, [duration], [callback]);
+
+Options:
+  dest: the element to transfer to.
+  destPos: the place to transfer to.
+           this is the object which includes left, top, height and width.
+  easing: name of easing.
+  spClass: the class name of each spectrum.
+  spCss: the css values object of each spectrum.
+  spDelay: delay of fading out the spectra.
+  autoScroll: scrolls automatically when the destination element is out of the window.
