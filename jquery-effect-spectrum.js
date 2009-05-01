@@ -1,5 +1,5 @@
 /*
- * jQuery Spectrum 1.0.1
+ * jQuery Spectrum 1.0.2
  *
  * Copyright (c) 2009 Naohiko MORI
  * Dual licensed under the MIT and GPL licenses.
@@ -86,7 +86,7 @@
 		});
 	}
 	$.fn.spectrum = function(o){
-		$(this).effect('spectrum', o, o.duration, o.callback);
+		return $(this).effect('spectrum', o, o.duration, o.callback);
 	}
 })(jQuery);
 
