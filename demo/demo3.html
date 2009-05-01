@@ -2,7 +2,7 @@
                     "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<title>jQuery-effect-spectrum demo 01</title>
+	<title>jQuery-effect-spectrum demo 03</title>
   <script src="js/jquery-1.3.2.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <script src="../jquery-effect-spectrum.js"></script>
@@ -10,17 +10,20 @@
   <script>
   $(document).ready(function(){
 		$('#scarf').click(function(){
-			$(this).effect('spectrum', {
-				dest: $('#semooh-img')
-			}, 500, function(){
-				$('#semooh-img').attr('src', 'img/semooh_mafu.gif');
+			$(this).spectrum({
+				dest: $('#semooh-img'),
+				callback: function(){
+					$('#semooh-img').attr('src', 'img/semooh_mafu.gif');
+				}
 			});
 		});
 		$('#santa').click(function(){
-			$(this).effect('spectrum', {
-				dest: $('#semooh-img')
-			}, 2000, function(){
-				$('#semooh-img').attr('src', 'img/semooh_xmas.gif');
+			$(this).spectrum({
+				dest: $('#semooh-img'),
+				duration: 2000,
+				callback: function(){
+					$('#semooh-img').attr('src', 'img/semooh_xmas.gif');
+				}
 			});
 		});
 		$('#look-back').click(function(){
@@ -31,11 +34,10 @@
 			});
 		});
 		$('#semooh').click(function(){
-			$(this).spectrum({
+			$(this).effect('spectrum', {
 				dest: $('#fn1'),
-				duration: 1500,
 				easing: 'easeOutQuart'
-			});
+			}, 2000);
 		});
   });
   </script>

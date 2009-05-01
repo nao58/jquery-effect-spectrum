@@ -16,3 +16,15 @@ Options:
   spCss: the css values object of each spectrum.
   spDelay: delay of fading out the spectra.
   autoScroll: scrolls automatically when the destination element is out of the window.
+
+As a plugin:
+	You can use this effect as typical plugin.
+	$('#src').spectrum({dest: $('#dest'), duration: 1000});
+
+Demo:
+	Try out demonstrations under "demo" directory.
+	All images are provided by Yuuki MATSUKI.
+
+----
+Copyright (c) 2009 Naohiko MORI
+Dual licensed under the MIT and GPL licenses.

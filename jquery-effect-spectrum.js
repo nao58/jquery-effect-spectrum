@@ -1,7 +1,7 @@
 /*
- * jQuery Spectrum 1.0.0
+ * jQuery Spectrum 1.0.1
  *
- * Copyright (c) 2009 MORI Naohiko
+ * Copyright (c) 2009 Naohiko MORI
  * Dual licensed under the MIT and GPL licenses.
  *
  * Depends:
@@ -84,6 +84,9 @@
 				}
 			});
 		});
+	}
+	$.fn.spectrum = function(o){
+		$(this).effect('spectrum', o, o.duration, o.callback);
 	}
 })(jQuery);
 
